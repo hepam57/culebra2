@@ -222,8 +222,17 @@ function IsSorpresa()
         alert('OTRA VEZ!!');
         alert('OTRA VEZ!!');
         alert('OTRA VEZ!!');
+        alert('OTRA VEZ!!');
+        alert('OTRA VEZ!!');
+        alert('OTRA VEZ!!');
+        alert('OTRA VEZ!!');
+        alert('OTRA VEZ!!');      
         alert('AHORA SI!!');      
         alert('AHORA TE LO JURO QUE SI!!'); 
+        alert('TE LO PROMETO QUE SI!!'); 
+        alert('O MEJOR NO!!'); 
+        alert('BUENOS SI!!'); 
+        alert('AHORA SI!!');
         alert('TE HAS GANADO MI CORAZÓN, TE AMO PRINCESA HERMOSA :* ;) :).')
     }
 }
