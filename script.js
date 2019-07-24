@@ -244,11 +244,11 @@ function ObtenerColor()
     {
       return "white"
     }else{
-   // let red=Math.floor(Math.random()*256)-1;
-   // let green=Math.floor(Math.random()*256)-1;
-   // let blue=Math.floor(Math.random()*256)-1;
-   // return `rgb(${red},${green},${blue})`;
-      return `rgb(240,240,240)`//"gray"
+    let red=Math.floor(Math.random()*256)-1;
+    let green=Math.floor(Math.random()*256)-1;
+    let blue=Math.floor(Math.random()*256)-1;
+    return `rgb(${red},${green},${blue})`;
+     // return `rgb(240,240,240)`//"gray"
     }
 }
 
