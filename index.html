@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body onkeydown="onKeyDownHandler(event);">
+    <header id='header'>    
+        <input type="button" id="generar" class="btn" value="Iniciar" >
+        <input type="button" id="eliminar" class="btn" value="Terminar">
+        <input type="text" name="" id="txt" class="txt" value="7">
+        <span>    
+            <label for="check" id='lbl'>Dark</label>
+            <input type="checkbox" name="check" id="check">
+        </span> 
+    </header>   
+
+    <div id='controls'>
+            <input type="button" id="arriba" class="btn-up btn-color" value="U" >
+            <input type="button" id="derecha" class="btn-rigth btn-color" value="R" >
+            <input type="button" id="abajo" class="btn-down btn-color" value="D" >
+            <input type="button" id="izquierda" class="btn-left btn-color" value="L" >
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
