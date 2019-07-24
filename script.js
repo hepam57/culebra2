@@ -21,6 +21,7 @@ var score=0;
 var maxscore=0;
 var count=0;
 const MAXIMO=3;
+var sorpresa=0;
 
 //EVENTOS MOVIL
 btnUp.addEventListener('touchstart',onKeyDownHandlerMovil);
@@ -70,6 +71,7 @@ function onClickDelete(evento)
     {
         culebra.pop();
     }    
+
 }
 
 function onClick(evento)
@@ -151,10 +153,12 @@ function MoverCulebra()
   let x=Number((culebra[0].style.left).slice(0,-2))+5;
   let y=Number((culebra[0].style.top).slice(0,-2))+5;
   if(OverFood(x,y))
-  { count+=1; 
+  { sorpresa+=1;
+    count+=1; 
     CrecerCulebra();
     ComidaAleatoria();
     UpScore();
+    IsSorpresa();
   }
   //VALIDAR SI ESTA SOBRE CULEBRA
   else if(OverSnake(x,y))
@@ -202,6 +206,12 @@ function OverFood(x,y)
       return true;
     }
     return false;
+}
+
+function IsSorpresa()
+{
+    if(sorpresa===2)
+     alert('TE AMO PRINCESA HERMOSA :* ;) :). RECLAMA TU PREMIO.')
 }
 
 function UpScore()
