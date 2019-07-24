@@ -43,13 +43,13 @@ header{
         position: fixed;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        width: 130px;
-        height: 130px;
+        grid-gap: 5px;
+        width: 150px;
+        height: 150px;
         left:45vw;
-        left: calc(50vw - 65px);
+        left: calc(50vw - 75px);
         top:45vh;
-        top: calc(50vh - 65px);
+        top: calc(50vh - 75px);
     }
     
     .btn-color{
