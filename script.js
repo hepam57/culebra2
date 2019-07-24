@@ -210,8 +210,8 @@ function OverFood(x,y)
 
 function IsSorpresa()
 {
-    if(sorpresa===2)
-     alert('TE AMO PRINCESA HERMOSA :* ;) :). RECLAMA TU PREMIO.')
+    if(sorpresa===30)
+     alert('TE AMO PRINCESA HERMOSA :* ;) :). ERES LO MEJOR QUE ME HA PASADO.')
 }
 
 function UpScore()
