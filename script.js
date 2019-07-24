@@ -211,7 +211,20 @@ function OverFood(x,y)
 function IsSorpresa()
 {
     if(sorpresa===30)
-     alert('TE AMO PRINCESA HERMOSA :* ;) :). ERES LO MEJOR QUE ME HA PASADO.')
+    {
+           alert('QUIERES RECLAMAR TU PREMIO?');
+     alert('EN SERIO LO QUIERES RECLAMAR?');
+     alert('NO TE CREO EN SERIO LO QUIERES RECLAMAR?');
+     alert('OK DALE ACEPTAR');
+     alert('OTRA VEZ!!');
+     alert('OTRA VEZ!!');
+     alert('OTRA VEZ!!');
+     alert('OTRA VEZ!!');
+     alert('OTRA VEZ!!');
+     alert('AHORA SI!!');      
+     alert('AHORA TE LO JURO QUE SI!!'); 
+     alert('TE HAS GANADO MI CORAZÓN, TE AMO PRINCESA HERMOSA :* ;) :).')
+    }
 }
 
 function UpScore()
