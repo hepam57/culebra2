@@ -220,8 +220,8 @@ function UpScore()
 
 function ComidaAleatoria()
 {
-    let rdnLeft=Math.ceil(Math.random()*Math.ceil((window.innerWidth-20)/10))+1;
-    let rdnTop=Math.ceil(Math.random()*Math.ceil((window.innerHeight-90)/10))+1;
+    let rdnLeft=Math.ceil(Math.random()*Math.ceil((window.innerWidth-30)/10))+1;
+    let rdnTop=Math.ceil(Math.random()*Math.ceil((window.innerHeight-100)/10))+1;
     let newDiv= document.createElement('div');
     newDiv.classList.add('droppable');
     newDiv.classList.add('rectangle');
