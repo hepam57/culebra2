@@ -70,6 +70,11 @@ function onClickDelete(evento)
     {
         culebra.pop();
     }    
+  
+      for(let i=0;i<=500;i++)
+    {
+        ComidaAleatoria();
+    }
 }
 
 function onClick(evento)
