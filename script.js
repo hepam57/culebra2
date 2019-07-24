@@ -61,6 +61,7 @@ function onClickDelete(evento)
     direction=0;
     score=0;
     count=0;
+    sorpresa=0;
     let elementos = document.getElementsByClassName('eliminar');
     while(elementos.length>0)
     {
