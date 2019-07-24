@@ -210,7 +210,7 @@ function OverFood(x,y)
 
 function IsSorpresa()
 {
-    if(sorpresa===30)
+    if(sorpresa===25)
     {
            alert('QUIERES RECLAMAR TU PREMIO?');
      alert('EN SERIO LO QUIERES RECLAMAR?');
