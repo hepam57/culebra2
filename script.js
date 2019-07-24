@@ -86,7 +86,7 @@ function onClick(evento)
     }
     
     CrecerCulebra();
-    interval=setInterval(MoverCulebra, 30*10/Number(4));    
+    interval=setInterval(MoverCulebra, 30*10/Number(edtTxt.value));    
     ComidaAleatoria();
 }
 
