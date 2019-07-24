@@ -73,7 +73,7 @@ function onClickDelete(evento)
   
       for(let i=0;i<=500;i++)
     {  alert(i);
-        ComidaAleatoria();
+        //ComidaAleatoria();
     }
 }
 
