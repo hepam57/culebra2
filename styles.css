@@ -55,7 +55,7 @@ header{
     .btn-color{
         background-color: rgba(210, 210, 210, 0.1);
         border-color: rgba(210, 210, 210, 0.3);
-        z-index:2;
+        z-index:23;
     }
     
     .btn-up{
