@@ -263,7 +263,7 @@ function ComidaAleatoria()
     newDiv.classList.add('droppable');
     newDiv.classList.add('rectangle');
     newDiv.classList.add('eliminar');
-    newDiv.style.zIndex='-3';
+    newDiv.style.zIndex='-1';
     newDiv.style.backgroundColor = (count==MAXIMO&&'purple'||'red');
     newDiv.style.width=10+'px';
     newDiv.style.height=10+'px';
