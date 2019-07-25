@@ -106,7 +106,7 @@ function CrecerCulebra()
     newDiv.style.backgroundColor = ObtenerColor();
     newDiv.style.width=10+'px';
     newDiv.style.height=10+'px';
-    newDiv.style.zIndex='-1';
+    //newDiv.style.zIndex='-1';
     if(culebra.length === 0)
     {   newDiv.style.left=10+'px';
         newDiv.style.top=80+'px';
@@ -263,7 +263,7 @@ function ComidaAleatoria()
     newDiv.classList.add('droppable');
     newDiv.classList.add('rectangle');
     newDiv.classList.add('eliminar');
-    newDiv.style.zIndex='-1';
+    //newDiv.style.zIndex='-1';
     newDiv.style.backgroundColor = (count==MAXIMO&&'purple'||'red');
     newDiv.style.width=10+'px';
     newDiv.style.height=10+'px';
