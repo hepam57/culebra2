@@ -57,24 +57,24 @@ function onChecked(evento)
 
 function onClickDelete(evento)
 {   
- //   clearInterval(interval);
-  //  direction=0;
- //   score=0;
- //   count=0;
- //   sorpresa=0;
-  //  let elementos = document.getElementsByClassName('eliminar');
-  //  while(elementos.length>0)
-  //  {
-  //    document.body.removeChild(elementos[0]);
-  //  }
+    clearInterval(interval);
+    direction=0;
+    score=0;
+    count=0;
+    sorpresa=0;
+    let elementos = document.getElementsByClassName('eliminar');
+    while(elementos.length>0)
+    {
+      document.body.removeChild(elementos[0]);
+    }
     
-  //  while(culebra.length>0)
-   // {
-   //     culebra.pop();
-  //  }    
+    while(culebra.length>0)
+    {
+        culebra.pop();
+    }    
 
-  for(let i=0;i<=500;i++)
-  {ComidaAleatoria();}
+ // for(let i=0;i<=500;i++)
+  //{ComidaAleatoria();}
 }
 
 function onClick(evento)
@@ -106,7 +106,7 @@ function CrecerCulebra()
     newDiv.style.backgroundColor = ObtenerColor();
     newDiv.style.width=10+'px';
     newDiv.style.height=10+'px';
-    newDiv.style.zIndex='-1';
+    //newDiv.style.zIndex='-1';
     if(culebra.length === 0)
     {   newDiv.style.left=10+'px';
         newDiv.style.top=80+'px';
@@ -161,7 +161,7 @@ function MoverCulebra()
   { sorpresa+=1;
     count+=1; 
     CrecerCulebra();
-   // ComidaAleatoria();
+    ComidaAleatoria();
     UpScore();
     IsSorpresa();
   }
