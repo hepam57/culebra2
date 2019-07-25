@@ -113,8 +113,9 @@ function CrecerCulebra()
     {
         newDiv.style.left=culebra[culebra.length-1].style.left;
         newDiv.style.top=culebra[culebra.length-1].style.top;
-        MoverCulebra();
-        culebra.push(newDiv);        
+        //MoverCulebra();
+        culebra.push(newDiv);
+        MoverCulebra();       
     }
     body.appendChild(newDiv); 
 }
