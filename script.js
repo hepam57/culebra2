@@ -58,10 +58,10 @@ function onChecked(evento)
 function onClickDelete(evento)
 {   
    // clearInterval(interval);
-    direction=0;
-    score=0;
-    count=0;
-    sorpresa=0;
+   // direction=0;
+    //score=0;
+    //count=0;
+    //sorpresa=0;
   //  let elementos = document.getElementsByClassName('eliminar');
   //  while(elementos.length>0)
   //  {
