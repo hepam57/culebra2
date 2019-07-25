@@ -65,7 +65,7 @@ function onClickDelete(evento)
   //  let elementos = document.getElementsByClassName('eliminar');
   //  while(elementos.length>0)
   //  {
-      document.body.removeChild(elementos[0]);
+  //    document.body.removeChild(elementos[0]);
   //  }
     
   //  while(culebra.length>0)
