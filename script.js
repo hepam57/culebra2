@@ -177,9 +177,17 @@ function MoverCulebra()
 
 function OverSnake(x,y)
 {
+    btnUp.hidden = true; 
+    btnRigth.hidden = true;
+    btnDown.hidden = true; 
+    btnLeft.hidden = true; 
     culebra[0].hidden = true;
     let elemBelow = document.elementFromPoint(x, y);
     culebra[0].hidden = false;
+    btnUp.hidden = false; 
+    btnRigth.hidden = false;
+    btnDown.hidden = false; 
+    btnLeft.hidden = false; 
 
     if(((x<10)||(x>window.innerWidth-10))||((y<80)||(y>window.innerHeight-10))||(!elemBelow))
     return true;
@@ -198,6 +206,8 @@ function OverSnake(x,y)
 
 function OverFood(x,y)
 {
+  
+  
     culebra[0].hidden = true;
     let elemBelow = document.elementFromPoint(x, y);
     culebra[0].hidden = false;
