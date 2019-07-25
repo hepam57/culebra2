@@ -57,22 +57,24 @@ function onChecked(evento)
 
 function onClickDelete(evento)
 {   
-    clearInterval(interval);
+   // clearInterval(interval);
     direction=0;
     score=0;
     count=0;
     sorpresa=0;
-    let elementos = document.getElementsByClassName('eliminar');
-    while(elementos.length>0)
-    {
-      document.body.removeChild(elementos[0]);
-    }
+  //  let elementos = document.getElementsByClassName('eliminar');
+  //  while(elementos.length>0)
+  //  {
+  //    document.body.removeChild(elementos[0]);
+  //  }
     
-    while(culebra.length>0)
-    {
-        culebra.pop();
-    }    
+  //  while(culebra.length>0)
+  //  {
+  //      culebra.pop();
+  //  }    
 
+  for(let i=0;i<=500;i++)
+  {ComidaAleatoria();}
 }
 
 function onClick(evento)
