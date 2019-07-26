@@ -23,12 +23,13 @@ var count=0;
 const MAXIMO=3;
 var sorpresa=0;
 var bloquear=false;
+var matchMedia = window.matchMedia("(max-width: 500px)")
 
 //EVENTOS MOVIL
-btnUp.addEventListener('touchstart',onKeyDownHandlerMovil);
-btnRigth.addEventListener('touchstart',onKeyDownHandlerMovil);
-btnDown.addEventListener('touchstart',onKeyDownHandlerMovil);
-btnLeft.addEventListener('touchstart',onKeyDownHandlerMovil);
+
+
+
+
 
 //EVENTOS
 btnGenerar.addEventListener('click',onClick);
@@ -175,12 +176,14 @@ function MoverCulebra()
 }
 
 function OverSnake(x,y)
-{
-    divControls.style.display = 'none';
+{  
+    
+    
+    divControls.style.display='none';
     culebra[0].hidden = true;
     let elemBelow = document.elementFromPoint(x, y);
     culebra[0].hidden = false;
-    divControls.style.display = 'grid';
+    divControls.style.display = (matchMedia.matches)?'grid':'none';
 
 
     if(((x<10)||(x>window.innerWidth-10))||((y<80)||(y>window.innerHeight-10))||(!elemBelow))
@@ -205,7 +208,8 @@ function OverFood(x,y)
     culebra[0].hidden = true;
     let elemBelow = document.elementFromPoint(x, y);
     culebra[0].hidden = false;
-    divControls.style.display = 'grid';
+    divControls.style.display = (matchMedia.matches)?'grid':'none';
+
   
     if (!elemBelow) return false;
   
