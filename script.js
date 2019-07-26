@@ -12,7 +12,7 @@ let btnUp = document.getElementById('arriba');
 let btnRigth = document.getElementById('derecha');
 let btnDown = document.getElementById('abajo');
 let btnLeft = document.getElementById('izquierda');
-
+let divControls = document.getElementById('controls');
 
 //VARIABLES
 var interval;
@@ -22,6 +22,7 @@ var maxscore=0;
 var count=0;
 const MAXIMO=3;
 var sorpresa=0;
+var bloquear=false;
 
 //EVENTOS MOVIL
 btnUp.addEventListener('touchstart',onKeyDownHandlerMovil);
@@ -106,7 +107,6 @@ function CrecerCulebra()
     newDiv.style.backgroundColor = ObtenerColor();
     newDiv.style.width=10+'px';
     newDiv.style.height=10+'px';
-    //newDiv.style.zIndex='-1';
     if(culebra.length === 0)
     {   newDiv.style.left=10+'px';
         newDiv.style.top=80+'px';
@@ -115,9 +115,7 @@ function CrecerCulebra()
     {
         newDiv.style.left=culebra[culebra.length-1].style.left;
         newDiv.style.top=culebra[culebra.length-1].style.top;
-        //MoverCulebra();
-        culebra.push(newDiv);
-       // MoverCulebra();       
+        culebra.push(newDiv);      
     }
     body.appendChild(newDiv); 
 }
@@ -161,7 +159,8 @@ function MoverCulebra()
   { sorpresa+=1;
     count+=1; 
     CrecerCulebra();
-    ComidaAleatoria();
+    if (!bloquear)
+      ComidaAleatoria();
     UpScore();
     IsSorpresa();
   }
@@ -177,17 +176,12 @@ function MoverCulebra()
 
 function OverSnake(x,y)
 {
-    btnUp.hidden = true; 
-    btnRigth.hidden = true;
-    btnDown.hidden = true; 
-    btnLeft.hidden = true; 
+    divControls.style.display = 'none';
     culebra[0].hidden = true;
     let elemBelow = document.elementFromPoint(x, y);
     culebra[0].hidden = false;
-    btnUp.hidden = false; 
-    btnRigth.hidden = false;
-    btnDown.hidden = false; 
-    btnLeft.hidden = false; 
+    divControls.style.display = 'grid';
+
 
     if(((x<10)||(x>window.innerWidth-10))||((y<80)||(y>window.innerHeight-10))||(!elemBelow))
     return true;
@@ -207,10 +201,11 @@ function OverSnake(x,y)
 function OverFood(x,y)
 {
   
-  
+    divControls.style.display = 'none';
     culebra[0].hidden = true;
     let elemBelow = document.elementFromPoint(x, y);
     culebra[0].hidden = false;
+    divControls.style.display = 'grid';
   
     if (!elemBelow) return false;
   
@@ -303,8 +298,23 @@ function ObtenerColor()
 //ESCUCHAR TECLAS
 function onKeyDownHandler(event) 
 { 
-    if (isPushed) return;
     var codigo = event.which || event.keyCode;
+    if(codigo=== 75)
+    {
+        for(let i=0;i<=100;i++)
+        {
+            ComidaAleatoria();
+        }
+    }
+
+    if(codigo=== 76)
+    {
+      bloquear=!bloquear;
+    }
+
+
+
+    if (isPushed) return;
     if((codigo === 40)&&(directions[direction]!='up')){
       direction=3;
     }else if((codigo === 38)&&(directions[direction]!='down')){
@@ -331,8 +341,5 @@ function onKeyDownHandlerMovil(event)
         direction=0;
     }   
     isPushed=true;
+    
 }
-
-
-
-
