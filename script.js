@@ -26,7 +26,7 @@ var bloquear=false;
 var matchMedia = window.matchMedia("(max-width: 500px)")
 
 //EVENTOS MOVIL
-
+divControls.addEventListener('click',onKeyDownHandlerMovil);
 
 
 
